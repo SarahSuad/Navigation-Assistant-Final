@@ -394,85 +394,114 @@ public class MainActivity extends AppCompatActivity {
         // | S2 | S3 | S4 |
         // | S5 | S6 | S7 |
 
-        OutSections S1 = new OutSections(0, 0, 0, 224,
-                                         74, 0, 74, 224);
+        int topleftx = 150;
+        int toplefty = 75;
 
-        OutSections S2 = new OutSections(75, 0, 75, 74,
-                                         149, 0, 149, 75);
+//                                         224, 75, 224, 149
 
-        OutSections S3 = new OutSections(75, 75, 75, 149,
-                                         149, 75, 149, 149);
-
-        OutSections S4 = new OutSections(75, 150, 75, 224,
-                                         149, 150, 149, 224);
-
-        OutSections S5 = new OutSections(150, 0, 150, 74,
-                                         224, 0, 224, 74);
-
+//        OutSections S1 = new OutSections(0, 0, 0, 224,
+//                                         74, 0, 74, 224);
+//
+//        OutSections S2 = new OutSections(75, 0, 75, 74,
+//                                         149, 0, 149, 75);
+//
+//        OutSections S3 = new OutSections(75, 75, 75, 149,
+//                                         149, 75, 149, 149);
+//
+//        OutSections S4 = new OutSections(75, 150, 75, 224,
+//                                         149, 150, 149, 224);
+//
+//        OutSections S5 = new OutSections(150, 0, 150, 74,
+//                                         224, 0, 224, 74);
+//
         OutSections S6 = new OutSections(150, 75, 150, 149,
                                          224, 75, 224, 149);
-
-        OutSections S7 = new OutSections(150, 150, 150, 224,
-                                         224, 150, 224, 224);
+//
+//        OutSections S7 = new OutSections(150, 150, 150, 224,
+//                                         224, 150, 224, 224);
 
         int pixelColor_1 = segmOut.getPixel(S6.topLeftx+25, S6.topLefty+25);
-        int pixelColor_2 = segmOut.getPixel(S6.topLeftx+50, S6.topLefty+25);
-        int pixelColor_3 = segmOut.getPixel(S6.topLeftx+25, S6.topLefty+50);
-        int pixelColor_4 = segmOut.getPixel(S6.topLeftx+50, S6.topLefty+50);
+        // int pixelColor_2 = segmOut.getPixel(S6.topLeftx+50, S6.topLefty+25);
+        // int pixelColor_3 = segmOut.getPixel(S6.topLeftx+25, S6.topLefty+50);
+        // int pixelColor_4 = segmOut.getPixel(S6.topLeftx+50, S6.topLefty+50);
 
         // 1 2
         // 3 4
 
-        int red_1 = Color.red(pixelColor_1);
-        int green_1 = Color.green(pixelColor_1);
-        int blue_1 = Color.blue(pixelColor_1);
-        int red_2 = Color.red(pixelColor_2);
-        int green_2 = Color.green(pixelColor_2);
-        int blue_2 = Color.blue(pixelColor_2);
-        int red_3 = Color.red(pixelColor_3);
-        int green_3 = Color.green(pixelColor_3);
-        int blue_3 = Color.blue(pixelColor_3);
-        int red_4 = Color.red(pixelColor_4);
-        int green_4 = Color.green(pixelColor_4);
-        int blue_4 = Color.blue(pixelColor_4);
-        String r_1, g_1, b_1, r_2, g_2, b_2, r_3, g_3, b_3, r_4, g_4, b_4;
+//        int red_1 = Color.red(pixelColor_1);
+//        int green_1 = Color.green(pixelColor_1);
+//        int blue_1 = Color.blue(pixelColor_1);
+//        int red_2 = Color.red(pixelColor_2);
+//        int green_2 = Color.green(pixelColor_2);
+//        int blue_2 = Color.blue(pixelColor_2);
+//        int red_3 = Color.red(pixelColor_3);
+//        int green_3 = Color.green(pixelColor_3);
+//        int blue_3 = Color.blue(pixelColor_3);
+//        int red_4 = Color.red(pixelColor_4);
+//        int green_4 = Color.green(pixelColor_4);
+//        int blue_4 = Color.blue(pixelColor_4);
+        String r_1, g_1, b_1, r_2, g_2, b_2;
 
+//        r_1 = Integer.toString(red_1);
+//        g_1 = Integer.toString(green_1);
+//        b_1 = Integer.toString(blue_1);
+//        r_2 = Integer.toString(red_2);
+//        g_2 = Integer.toString(green_2);
+//        b_2 = Integer.toString(blue_2);
+//        r_3 = Integer.toString(red_3);
+//        g_3 = Integer.toString(green_3);
+//        b_3 = Integer.toString(blue_3);
+//        r_4 = Integer.toString(red_4);
+//        g_4 = Integer.toString(green_4);
+//        b_4 = Integer.toString(blue_4);
+
+//        Toast.makeText(getApplicationContext(), r_1 + " " + g_1 + " " + b_1, Toast.LENGTH_SHORT).show();
+
+//        if(red_1 == 128 && green_1 == 64 && blue_1 == 128) {
+//             point_count++;
+//        }
+//        if(red_2 == 128 && green_2 == 64 && blue_2 == 128) {
+//            point_count++;
+//        }
+//        if(red_3 == 128 && green_3 == 64 && blue_3 == 128) {
+//            point_count++;
+//        }
+//        if(red_4 == 128 && green_4 == 64 && blue_4 == 128) {
+//            point_count++;
+//        }
+
+        int pixelColor1 = segmOut.getPixel(100, 150);
+        int pixelColor2 = segmOut.getPixel(125, 150);
+
+        int red_1 = Color.red(pixelColor1);
+        int green_1 = Color.green(pixelColor1);
+        int blue_1 = Color.blue(pixelColor1);
+        int red_2 = Color.red(pixelColor2);
+        int green_2 = Color.green(pixelColor2);
+        int blue_2 = Color.blue(pixelColor2);
         r_1 = Integer.toString(red_1);
         g_1 = Integer.toString(green_1);
         b_1 = Integer.toString(blue_1);
         r_2 = Integer.toString(red_2);
         g_2 = Integer.toString(green_2);
         b_2 = Integer.toString(blue_2);
-        r_3 = Integer.toString(red_3);
-        g_3 = Integer.toString(green_3);
-        b_3 = Integer.toString(blue_3);
-        r_4 = Integer.toString(red_4);
-        g_4 = Integer.toString(green_4);
-        b_4 = Integer.toString(blue_4);
 
-        Toast.makeText(getApplicationContext(), r_1 + " " + g_1 + " " + b_1, Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), r_1 + " " + g_1 + " " + b_1 + " | " + r_2 + " " + g_2 + " " + b_2, Toast.LENGTH_SHORT).show();
 
         if(red_1 == 128 && green_1 == 64 && blue_1 == 128) {
              point_count++;
         }
         if(red_2 == 128 && green_2 == 64 && blue_2 == 128) {
-            point_count++;
-        }
-        if(red_3 == 128 && green_3 == 64 && blue_3 == 128) {
-            point_count++;
-        }
-        if(red_4 == 128 && green_4 == 64 && blue_4 == 128) {
-            point_count++;
+             point_count++;
         }
 
         Log.d("OUT", Integer.toString(point_count));
 
-        if(point_count > 2) {
+        if(point_count > 0) {
             return 1;
         } else {
             return 2;
         }
-
     }
 
     private void voiceOutput(int voiceLine) {
@@ -488,7 +517,7 @@ public class MainActivity extends AppCompatActivity {
                 throw new IllegalStateException("Unexpected value: " + "");
         }
 
-        // Toast.makeText(MainActivity.this,lineToSpeak,Toast.LENGTH_LONG).show();
+        Toast.makeText(MainActivity.this,lineToSpeak,Toast.LENGTH_LONG).show();
 
         //speak
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
