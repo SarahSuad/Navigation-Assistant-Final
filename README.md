@@ -24,7 +24,7 @@
 
 
 # About the Project
-The goal of this research is to use purely computer vision to help a blind person gain a rudimentary understanding of an interior area’s layout, allowing them to plan out how to proceed. This would be a significant step in making moving around easier for them. Thhe solution consisted of the following steps :
+The goal of this research is to use purely computer vision to help a blind person gain a rudimentary understanding of an interior area’s layout, allowing them to plan out how to proceed. This would be a significant step in making moving around easier for them. The solution consisted of the following steps :
 * Firstly, a mobile app that passes image frames to a computer vision algorithm continuously at a given rate/frames per second.
 * Second, a semantic segmentation algorithm that takes the passed frames and converts them to a segmented image where different classes of objects are detected and assigned a pixel colour.
 * Finally, an output function that ‘reads’ the segmented image and checks for walkable space or blocked space in areas where the user may walk. It then transmits this information to the user in the form of audio through text-to-speech.
